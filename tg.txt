@@ -1,0 +1,571 @@
+eguniki@deluas1x> 
+
+
+***************************
+*** SSH2 Protocol login ***
+***************************
+
+login name: eguniki
+eguniki's password: 
+Last login: Thu Apr 19 10:23:07 2018 from 10.31.55.196
+Oracle Corporation      SunOS 5.11      11.3    March 2016
+eguniki@ne3uas1x> eac_esi_config -ne KHGEB01
+name            = KHGEB01
+type            = AXE
+version         = APIO,STS SSH_MSS
+user_id         = ossuser
+host            = masterservice
+twin_host       = 
+address         = 10.142.94.247,10.142.94.245,10.142.94.246
+cr_protocol     = SSH_APG43L
+cr_daemon       = ehiplx_ac_in
+cr_initiator    = LINUX
+cr_conn_auth    = 1
+cr_comm_auth    = 1
+file_protocol   = FTP
+file_daemon     = 
+file_initiator  = 22
+file_conn_auth  = 1
+conn_idle_to    = 1800
+short_buf_to    = 900
+long_buf_to     = 900
+conn_ack_to     = 30
+disc_ack_to     = 20
+cr_log_state    = 1
+command_log     = 100
+immediate_log   = 255
+delayed_log     = 255
+spontaneous_log = 0
+alarm_log       = 0
+telnet_port     = 23
+telnet_mts      = 5000
+ssh_port        = 22
+ssh_mss         = 52000
+eguniki@ne3uas1x> telnet 10.142.94.247 4423
+Trying 10.142.94.247...
+Connected to 10.142.94.247.
+Escape character is '^]'.
+SC-2-1 login: ts_ossuser
+********************************************************************************
+IF YOU ARE NOT AN AUTHORIZED USER, PLEASE EXIT IMMEDIATELY.
+********************************************************************************
+Password: 
+Login incorrect
+
+SC-2-1 login: ts_ossuser
+********************************************************************************
+IF YOU ARE NOT AN AUTHORIZED USER, PLEASE EXIT IMMEDIATELY.
+********************************************************************************
+Password: 
+tset: unknown terminal type sun-color
+Terminal type? vt100
+KHGEB01-SC-2-1:$ mml
+WO      KHGEB01/G16B/IP03         AD-206  TIME 180419 1146  PAGE    1
+
+<dpwsp;
+CP STATE
+
+MAU  SB SBSTATE      RPH-A       RPH-B       BUA STATE
+NRM  B  WO           -           -                   1
+
+END
+
+<syelp;
+LIMITS FOR SOFTWARE ERROR INTENSITY
+
+DCAT TIME             LIMIT                  
+   0 0000 - 2359       3000    (DEFAULT VALUE)
+   1 0000 - 2359       3000    (DEFAULT VALUE)
+   2 0000 - 2359       3000    (DEFAULT VALUE)
+   3 0000 - 2359       3000    (DEFAULT VALUE)
+   4 0000 - 2359       3000    (DEFAULT VALUE)
+   5 0000 - 2359       3000    (DEFAULT VALUE)
+   6 0000 - 2359       3000    (DEFAULT VALUE)
+   7 0000 - 2359       3000    (DEFAULT VALUE)
+   8 0000 - 2359       3000    (DEFAULT VALUE)
+   9 0000 - 2359       3000    (DEFAULT VALUE)
+  10 0000 - 2359       3000    (DEFAULT VALUE)
+  11 0000 - 2359       3000    (DEFAULT VALUE)
+  12 0000 - 2359       3000    (DEFAULT VALUE)
+  13 0000 - 2359       3000    (DEFAULT VALUE)
+  14 0000 - 2359       3000    (DEFAULT VALUE)
+  15 0000 - 2359       3000    (DEFAULT VALUE)
+                          
+CURRENT ERROR LIMIT:        3000
+CURRENT ERROR INTENSITY:       0
+                                
+FORLOPP RELEASE DELAY LIMIT:      30
+DELAY FOR LAST FORLOPP RELEASE:    0
+
+NUMBER OF FORLOPPS DURING RELEASE: 0
+
+END
+
+<rrinp:nsei=all;
+RADIO TRANSMISSION IP NETWORK SERVICE DATA
+
+NSEI   CAP
+  527   50
+
+PRIP              PPORT  NSSTATE  NSSTATUS  RAT
+10.50.46.170      2157   ACTIVE   ACTIVE    GERAN
+
+RIP               PORT   SWEIGHT  DWEIGHT  RIPSTATUS
+10.50.46.170      43488  1        0        OPERATIONAL
+10.50.46.170      2158   0        1        OPERATIONAL
+
+LIP               IPDEV           LIPSTATUS
+10.110.101.21     RTIPGPH-18      OPERATIONAL
+10.110.101.20     RTIPGPH-17      OPERATIONAL
+10.110.101.19     RTIPGPH-16      OPERATIONAL
+10.110.101.18     RTIPGPH-15      OPERATIONAL
+10.110.101.17     RTIPGPH-14      OPERATIONAL
+10.110.101.16     RTIPGPH-13      OPERATIONAL
+10.110.101.15     RTIPGPH-12      OPERATIONAL
+10.110.101.14     RTIPGPH-11      OPERATIONAL
+10.110.101.13     RTIPGPH-10      OPERATIONAL
+10.110.101.12     RTIPGPH-9       OPERATIONAL
+10.110.101.11     RTIPGPH-8       OPERATIONAL
+10.110.101.10     RTIPGPH-7       OPERATIONAL
+10.110.101.9      RTIPGPH-6       OPERATIONAL
+10.110.101.8      RTIPGPH-5       OPERATIONAL
+10.110.101.7      RTIPGPH-4       OPERATIONAL
+10.110.101.6      RTIPGPH-3       OPERATIONAL
+10.110.101.5      RTIPGPH-2       OPERATIONAL
+10.110.101.4      RTIPGPH-1       OPERATIONAL
+10.110.101.3      RTIPGPH-0       OPERATIONAL
+
+
+END
+
+<c7ltp:ls=all;
+CCITT7 LINK SET STATE
+
+LS             SPID    SLC   STATE      INHIBST  FCODE  INFO
+3-812          UEBVRN2 00    ACTIVE
+                       01    ACTIVE
+                       02    ACTIVE
+                       03    ACTIVE
+                       04    ACTIVE
+                       05    ACTIVE
+                       06    ACTIVE
+                       07    ACTIVE
+                       08    ACTIVE
+                       09    ACTIVE
+                       10    ACTIVE
+                       11    ACTIVE
+                       12    ACTIVE
+                       13    ACTIVE
+                       14    ACTIVE
+                       15    ACTIVE
+
+3-1062         SMPC
+
+3-5013         UEMSC13 00    ACTIVE
+                       01    ACTIVE
+
+END
+
+<gdstp;
+DISTRIBUTED GROUP SWITCH STATE
+
+UNIT         STATE  BLSTATE  VAR  STATUS
+
+CLM-0        WO               11  MASTER
+CLM-1        WO               11  SLAVE
+
+UNIT         STATE  BLSTATE  VAR    UNIT         STATE  BLSTATE
+
+XM-A-0-0     WO                1    XM-B-0-0     WO
+XM-A-0-1     WO                1    XM-B-0-1     WO
+XM-A-0-2     WO                1    XM-B-0-2     WO
+MUX34-A-0    WO                0    MUX34-B-0    WO
+MUX34-A-1    WO                0    MUX34-B-1    WO
+MUX34-A-8    WO                0    MUX34-B-8    WO
+MUX34-A-9    WO                0    MUX34-B-9    WO
+MUX3-A-0     WO                0    MUX3-B-0     WO
+MUX3-A-1     WO                0    MUX3-B-1     WO
+MUX3-A-4     WO                0    MUX3-B-4     WO
+MUX3-A-5     WO                0    MUX3-B-5     WO
+MUX3-A-32    WO                0    MUX3-B-32    WO
+MUX3-A-33    WO                0    MUX3-B-33    WO
+MUX3-A-36    WO                0    MUX3-B-36    WO
+MUX3-A-37    WO                0    MUX3-B-37    WO
+
+END
+
+<m3asp;
+M3UA ASSOCIATION STATUS
+
+SAID             STATE  BLSTATE          AUTOBLSTATE
+SCTP2_GHBC02     ACT                     
+
+SCTP1_GHBC02     ACT                     
+
+END
+   
+
+<allip:alcat=apz;
+ALARM LIST
+
+NONE
+
+END
+         
+
+<rlcrp:cell=all;
+CELL RESOURCES
+
+CELL      BCCH  CBCH  SDCCH  NOOFTCH    QUEUED  ECBCCH
+KGTST11      1     1      7    14-  28       0       0
+END
+
+<rlstp:cell=all,state=halted;
+CELL STATUS
+
+CELL      STATE
+NONE
+END
+
+
+<exit;
+
+
+KHGEB01-SC-2-1:$ mml
+WO      KHGEB01/G16B/IP03         AD-207  TIME 180419 1150  PAGE    1
+<aploc;
+Bad terminal type: "sun-color". Will assume vt100.>mana>ManagedElement=KHGEB01
+(ManagedElement=KHGEB01)>show
+ManagedElement=KHGEB01
+   networkManagedElementId="KHGEB01"
+   SystemFunctions=1
+   Transport=1
+(ManagedElement=KHGEB01)>Sys(ManagedElement=KHGEB01)>SystemFunctions=1
+(SystemFunctions=1)>show
+SystemFunctions=1
+   AxeFunctions=1
+   BrM=1
+   FileM=1
+   Fm=1
+   HealthCheckM=1
+   Pm=1
+   SecM=1
+   SwInventory=1
+   SwM=1
+   SysM=1
+(SystemFunctions=1)>Axe(SystemFunctions=1)>AxeFunctions=1
+(AxeFunctions=1)>show
+AxeFunctions=1
+   apgShelfArchitecture=SCX
+   axeApplication=BSC
+   systemType=SINGLE_CP_SYSTEM
+   DataOutputHandling=1
+   SecurityHandling=1
+   SupervisionHandling=1
+   SystemComponentHandling=1
+   SystemHandling=1
+(AxeFunctions=1)>SystemHandling=1
+(SystemHandling=1)>show
+SystemHandling=1
+   AlphanumericDeviceM=1
+   CpFileSystemM=1
+   CpReloadM=1
+   FunctionDistributionM=1
+   LicenseM=1
+   TimeReferenceM=1
+(SystemHandling=1)>CpFileSystemM=1
+(CpFileSystemM=1)>show
+CpFileSystemM=1
+   CpVolume=RELVOLUMSW
+   CpVolume=EXCHVOLUME
+   CpVolume=BTSVOLUMSW
+   CpVolume=TEMPVOLUME
+(CpFileSystemM=1)>CpVolume=BTSVOLUMSW
+(CpVolume=BTSVOLUMSW)>show
+CpVolume=BTSVOLUMSW
+   CompositeFile=B1316R087C
+   CompositeFile=B1317R088D
+   CompositeFile=B0716R057C
+(CpVolume=BTSVOLUMSW)>top
+>mana>ManagedElement=KHGEB01
+(ManagedElement=KHGEB01)>show
+ManagedElement=KHGEB01
+   networkManagedElementId="KHGEB01"
+   SystemFunctions=1
+   Transport=1
+(ManagedElement=KHGEB01)>SystemFunctions=1
+(SystemFunctions=1)>show
+SystemFunctions=1
+   AxeFunctions=1
+   BrM=1
+   FileM=1
+   Fm=1
+   HealthCheckM=1
+   Pm=1
+   SecM=1
+   SwInventory=1
+   SwM=1
+   SysM=1
+(SystemFunctions=1)>Axe(SystemFunctions=1)>AxeFunctions=1
+(AxeFunctions=1)>show
+AxeFunctions=1
+   apgShelfArchitecture=SCX
+   axeApplication=BSC
+   systemType=SINGLE_CP_SYSTEM
+   DataOutputHandling=1
+   SecurityHandling=1
+   SupervisionHandling=1
+   SystemComponentHandling=1
+   SystemHandling=1
+(AxeFunctions=1)>SystemHandling=1
+(SystemHandling=1)>show
+SystemHandling=1
+   AlphanumericDeviceM=1
+   CpFileSystemM=1
+   CpReloadM=1
+   FunctionDistributionM=1
+   LicenseM=1
+   TimeReferenceM=1
+(SystemHandling=1)> CpFileSystemM=1
+(CpFileSystemM=1)>show
+CpFileSystemM=1
+   CpVolume=RELVOLUMSW
+   CpVolume=EXCHVOLUME
+   CpVolume=BTSVOLUMSW
+   CpVolume=TEMPVOLUME
+(CpFileSystemM=1)>CpVolume=BTSVOLUMSW
+(CpVolume=BTSVOLUMSW)>show
+CpVolume=BTSVOLUMSW
+   CompositeFile=B1316R087C
+   CompositeFile=B1317R088D
+   CompositeFile=B0716R057C
+(CpVolume=BTSVOLUMSW)>cpfls -ls B0716R057C
+CPF FILE TABLE
+
+FILE                                TYPE  CMP  VOLUME
+B0716R057C                          reg   yes  BTSVOLUMSW
+
+TRANSFER QUEUE                      MODE
+                                    
+
+RLENGTH  MAXSIZE  MAXTIME  REL      ACTIVE        SIZE  USERS
+    512                                              0   0 [ 0R  0W]   
+
+SUBFILES                                  SIZE  USERS
+B0716R057C-HEADER                            2   0 [ 0R  0W]   
+B0716R057C-LF1                              35   0 [ 0R  0W]   
+B0716R057C-LF10                           2341   0 [ 0R  0W]   
+B0716R057C-LF11                           1892   0 [ 0R  0W]   
+B0716R057C-LF12                            796   0 [ 0R  0W]   
+B0716R057C-LF13                            116   0 [ 0R  0W]   
+B0716R057C-LF2                            9514   0 [ 0R  0W]   
+B0716R057C-LF3                            8730   0 [ 0R  0W]   
+B0716R057C-LF4                            1363   0 [ 0R  0W]   
+B0716R057C-LF5                            2868   0 [ 0R  0W]   
+B0716R057C-LF6                             796   0 [ 0R  0W]   
+B0716R057C-LF7                             116   0 [ 0R  0W]   
+B0716R057C-LF8                            2005   0 [ 0R  0W]   
+B0716R057C-LF9                            1184   0 [ 0R  0W]   
+
+
+(CpVolume=BTSVOLUMSW)>up
+(CpFileSystemM=1)>show
+CpFileSystemM=1
+   CpVolume=RELVOLUMSW
+   CpVolume=EXCHVOLUME
+   CpVolume=BTSVOLUMSW
+   CpVolume=TEMPVOLUME
+(CpFileSystemM=1)>CpVolume=BTSVOLUMSW
+(CpVolume=BTSVOLUMSW)>show
+CpVolume=BTSVOLUMSW
+   CompositeFile=B1316R087C
+   CompositeFile=B1317R088D
+   CompositeFile=B0716R057C
+(CpVolume=BTSVOLUMSW)>cpfmkfile -l 512 -c B0707R035H BTSVOLUMSW
+(CpVolume=BTSVOLUMSW)>show
+CpVolume=BTSVOLUMSW
+   CompositeFile=B0707R035H
+   CompositeFile=B1316R087C
+   CompositeFile=B1317R088D
+   CompositeFile=B0716R057C
+(CpVolume=BTSVOLUMSW)>UP
+(CpFileSystemM=1)>importCpFile B0707R035H B0707R035H CLEAR
+(CpFileSystemM=1)>cpfls -ls B0707R035H
+CPF FILE TABLE
+
+FILE                                TYPE  CMP  VOLUME
+B0707R035H                          reg   yes  BTSVOLUMSW
+
+TRANSFER QUEUE                      MODE
+                                    
+
+RLENGTH  MAXSIZE  MAXTIME  REL      ACTIVE        SIZE  USERS
+    512                                              0   0 [ 0R  0W]   
+
+SUBFILES                                  SIZE  USERS
+B0707R035H-HEADER                            2   0 [ 0R  0W]   
+B0707R035H-LF1                              33   0 [ 0R  0W]   
+B0707R035H-LF10                           2341   0 [ 0R  0W]   
+B0707R035H-LF11                           1892   0 [ 0R  0W]   
+B0707R035H-LF12                            796   0 [ 0R  0W]   
+B0707R035H-LF13                            116   0 [ 0R  0W]   
+B0707R035H-LF2                            8176   0 [ 0R  0W]   
+B0707R035H-LF3                            8236   0 [ 0R  0W]   
+B0707R035H-LF4                            1324   0 [ 0R  0W]   
+B0707R035H-LF5                            2819   0 [ 0R  0W]   
+B0707R035H-LF6                             796   0 [ 0R  0W]   
+B0707R035H-LF7                             116   0 [ 0R  0W]   
+B0707R035H-LF8                            2005   0 [ 0R  0W]   
+B0707R035H-LF9                            1184   0 [ 0R  0W]   
+
+
+(CpFileSystemM=1)>mml
+WO      KHGEB01/G16B/IP03         AD-208  TIME 180419 1223  PAGE    1
+<
+
+TIME OUT
+
+
+WO      KHGEB01/G16B/IP03         AD-208  TIME 180419 1230  PAGE    1
+<RXMSP:MOTY=RXOTG;
+RADIO X-CEIVER ADMINISTRATION
+MANAGED OBJECT STATUS
+
+MO               STATE  BLSTATE    BLO   BLA   LMO    BTS   CONF
+RXOTG-100        OPER              0000  0000         STA
+
+END
+
+<rxasp:mo=rxotg-100;
+RADIO X-CEIVER ADMINISTRATION
+MANAGED OBJECT ALARM SITUATIONS
+
+MO                SCGR  SC         RSITE           ALARM SITUATION
+RXOTG-100                          KGTST1
+
+END
+
+<rxmsp:mo=rxotg-100,subord;
+RADIO X-CEIVER ADMINISTRATION
+MANAGED OBJECT STATUS
+
+MO               STATE  BLSTATE    BLO   BLA   LMO    BTS   CONF
+RXOTG-100        OPER              0000  0000         STA
+RXOCF-100        OPER              0000  0000         STA
+RXOIS-100        OPER              0000  0000         DIS   CONF
+RXOCON-100       OPER              0000  0000         DIS   CONF
+RXOTRX-100-0     OPER              0000  0000         STA
+RXORX-100-0      OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-0-0    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-0-1    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-0-2    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-0-3    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-0-4    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-0-5    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-0-6    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-0-7    OPER              0000  0000  0000   ENA   ENA
+RXOTX-100-0      OPER              0000  0000  0000   ENA   ENA
+RXOTRX-100-1     OPER              0000  0000         STA
+RXORX-100-1      OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-1-0    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-1-1    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-1-2    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-1-3    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-1-4    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-1-5    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-1-6    OPER              0000  0000  0000   ENA   ENA
+RXOTS-100-1-7    OPER              0000  0000  0000   ENA   ENA
+RXOTX-100-1      OPER              0000  0000  0000   ENA   ENA
+RXOTF-100        OPER              0000  0000  0000   ENA   ENA
+RXOMCTR-100-0    OPER              0000  0000  0000   ENA   ENA
+
+END
+
+<rxmop:mo=rxotg-100;
+RADIO X-CEIVER ADMINISTRATION
+MANAGED OBJECT DATA
+
+MO                RSITE                               COMB  FHOP  MODEL
+RXOTG-100         KGTST1                              HYB   SY    G12
+
+                  SWVERREPL      SWVERDLD       SWVERACT      TMODE
+                                 B1317R088D     B1317R088D    SCM
+
+                  CONFMD  CONFACT  TRACO  ABISALLOC  CLUSTERID  SCGR
+                  FASTREC  2       POOL   FIXED                  100
+
+                  DAMRCR  CLTGINST  CCCHCMD
+                                    NORMAL
+
+                  PTA  JBSDL  PAL  JBPTA
+                   7    20    0     20
+
+                  TGFID         SIGDEL        BSSWANTED    PACKALG
+                  H'0000-0008   NORMAL        1610         1
+END
+
+<rlcrp:cell=all;
+CELL RESOURCES
+
+CELL      BCCH  CBCH  SDCCH  NOOFTCH    QUEUED  ECBCCH
+KGTST11      1     1      7    14-  28       0       0
+END
+
+<rtcp:moty=rxotg,cell=KGTST11;
+NOT ACCEPTED
+COMMAND UNKNOWN
+<rtcp:mo=rxotg,cell=KGTST11;
+NOT ACCEPTED
+COMMAND UNKNOWN
+<rxtcp:moty=rxotg,cell=KGTST11;
+RADIO X-CEIVER ADMINISTRATION
+TG TO CHANNEL GROUP CONNECTION DATA
+
+MO               CELL                CHGR
+RXOTG-100        KGTST11              0
+                 KGTST11              1
+
+END
+
+<rlcrp:cell=all;
+CELL RESOURCES
+
+CELL      BCCH  CBCH  SDCCH  NOOFTCH    QUEUED  ECBCCH
+KGTST11      1     1      7    14-  28       0       0
+END
+
+<rxmop:mo=rxotg-100;
+RADIO X-CEIVER ADMINISTRATION
+MANAGED OBJECT DATA
+
+MO                RSITE                               COMB  FHOP  MODEL
+RXOTG-100         KGTST1                              HYB   SY    G12
+
+                  SWVERREPL      SWVERDLD       SWVERACT      TMODE
+                                 B1317R088D     B1317R088D    SCM
+
+                  CONFMD  CONFACT  TRACO  ABISALLOC  CLUSTERID  SCGR
+                  FASTREC  2       POOL   FIXED                  100
+
+                  DAMRCR  CLTGINST  CCCHCMD
+                                    NORMAL
+
+                  PTA  JBSDL  PAL  JBPTA
+                   7    20    0     20
+
+                  TGFID         SIGDEL        BSSWANTED    PACKALG
+                  H'0000-0008   NORMAL        1610         1
+END
+
+<exit;
+
+
+(CpFileSystemM=1)>exit
+
+WO      KHGEB01/G16B/IP03         AD-207  TIME 180419 1244  PAGE    1
+<exit;
+
+
+KHGEB01-SC-2-1:$ exit
+logout
+Connection to 10.142.94.247 closed by foreign host.
